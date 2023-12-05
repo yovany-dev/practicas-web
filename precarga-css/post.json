@@ -1,0 +1,26 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "profile": {
+                "name": "Elliot Alderson",
+                "photo": "photo-profile-elliot-alderson.jpg"
+            },
+            "content": {
+                "text": "My new setup!!!",
+                "photo": "photo-post-elliot-alderson.jpg"
+            }
+        },
+        {
+            "id": 2,
+            "profile": {
+                "name": "Angela Moss",
+                "photo": "photo-profile-angela-moss.jpg"
+            },
+            "content": {
+                "text": "Happy in my job...",
+                "photo": "photo-post-angela-moss.jpeg"
+            }
+        }
+    ]
+}
