@@ -1,0 +1,7 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+react-loading-skeleton/node_modules
+
+# production
+react-loading-skeleton/build
