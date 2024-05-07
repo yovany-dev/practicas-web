@@ -1,2 +1,2 @@
 # Practicas Web
-Repositorio para practicas de proyectos sencillos o pequeñas funcionalidades web.
+Repositorio para practicar proyectos sencillos o pequeñas funcionalidades web.
