@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/tracking.css">
+    <link rel="stylesheet" href="css/tracking-app.css">
+    <script src="https://kit.fontawesome.com/1f8481301a.js" crossorigin="anonymous"></script>
+    <title>Tracking App</title>
+</head>
+<body>
+  <div class="piloto" id="piloto">
+    <div class="piloto-section">
+      <p class="piloto-title">Nombre</p>
+      <p class="piloto-desc">Eduardo Cortes</p>
+    </div>
+    <div class="piloto-section">
+      <p class="piloto-title">Cargo</p>
+      <p class="piloto-desc">Piloto</p>
+    </div>
+  </div>
+  <div class="content">
+    <article class="tracking">
+      <section class="first">
+        <div class="first__text">
+          <p class="p-1">Número de guía</p>
+          <p class="p-2">ID-84231</p>
+        </div>
+        <div class="data">
+          <div class="data-item">
+            <div class="data-container-status">
+              <div class="circle"></div>
+              <div class="data-time"></div>
+            </div>
+            <div class="data-container">
+              <p class="message">Generado</p>
+              <div>
+                <p class="date">Jun. 17, 2024</p>
+                <p class="date-black">12:05 pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="secound">
+        <span><i class="fa-solid fa-truck-moving"></i></span>
+        <div class="">
+          <p class="secound-title">Fecha estimada de entrega</p>
+          <p class="secound-title subtitle">Jun. 20, 2024. 11 AM - 3PM</p>
+        </div>
+      </section>
+      <section class="three">
+        <div class="data">
+          <div class="data-item">
+            <div class="data-container-status">
+              <div class="circle circle-piloto pending"></div>
+              <div class="data-time pending"></div>
+            </div>
+            <div class="data-container">
+              <p class="message">Recogida/entrega en curso</p>
+              <div class="data-pending" id="step-1">
+                <p class="date">Jun 20, 2024</p>
+                <p class="date-black">11:31 am</p>
+              </div>
+            </div>
+          </div>
+          <div class="data-item">
+            <div class="data-container-status">
+              <div class="circle circle-piloto pending"></div>
+              <div class="data-time pending"></div>
+            </div>
+            <div class="data-container">
+              <p class="message">En tránsito</p>
+              <div class="data-pending" id="step-2">
+                <p class="date">Jun 20, 2024</p>
+                <p class="date-black">02:10 pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="data-item">
+            <div class="data-container-status">
+              <div class="circle circle-piloto pending"></div>
+            </div>
+            <div class="data-container">
+              <p class="message">Entregado</p>
+              <div class="data-pending" id="step-3">
+                <p class="date">Jun 20, 2024</p>
+                <p class="date-black">03:07 pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <script src="js/tracking-app.js"></script>
+
+</body>
+</html>

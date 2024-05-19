@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="https://kit.fontawesome.com/1f8481301a.js" crossorigin="anonymous"></script>  <title>Administration Panel</title>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <section class="title section">
+        <p>Car Transportation Solutions</p>
+      </section>
+      <section class="section">
+        <p class="title-user">Usuario <span class="title-span">administrador</span></p>
+      </section>
+      <section class="options">
+        <div class="btn">
+          <span><i class="fa-solid fa-users"></i></span>
+          Usuarios
+        </div>
+        <div class="btn">
+          <span><i class="fa-solid fa-id-card"></i></span>
+          Pilotos
+        </div>
+        <div class="btn" id="btn-quote">
+          <span><i class="fa-solid fa-money-bill"></i></span>
+          Cotizaciones
+        </div>
+        <div class="btn">
+          <span><i class="fa-solid fa-truck"></i></span>
+          Delivery
+        </div>
+        <div class="btn" id="btn-deliveries">
+          <span><i class="fa-solid fa-square-plus"></i></span>
+          Crear entrega
+        </div>
+      </section>
+      <section>
+        <div class="btn">
+          <span><i class="fa-solid fa-lock"></i></span>
+          Cerrar sesión
+        </div>
+      </section>
+    </aside>
+    <main class="content">
+      <div class="modal hidden" id="modal">
+        <div class="content">
+          <p class="quote__title">Asingar Piloto</p>
+          <select>
+            <option value="Byron david">Byron david</option>
+            <option value="Alex cobos" selected >Alex cobos</option>
+            <option value="Eduardo cortés">Eduardo cortés</option>
+          </select>
+          <div id="btn-accept" class="btn">Aceptar</div>
+        </div>
+      </div>
+      <div class="quote hidden" id="quote">
+        <div class="square quote__item" id="item">
+          <div class="icon">
+            <span><i class="fa-solid fa-money-bill"></i></span>
+            <p class="quote__title">Orden #1</p>
+          </div>
+          <div class="quote__square">
+            <p class="quote__title">1. Origen y destino</p>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Origen</p>
+                <p class="to">Miami, Florida, EE. UU.</p>
+              </div>
+              <div class="input">
+                <p class="from">Destino</p>
+                <p class="to">Carolina del Norte, EE. UU.</p>
+              </div>
+            </div>
+          </div>
+          <div class="quote__square">
+            <p class="quote__title">2. Detalles del vehículo</p>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Año</p>
+                <p class="to">2018</p>
+              </div>
+              <div class="input">
+                <p class="from">Marca</p>
+                <p class="to">Mercedes-Benz</p>
+              </div>
+              <div class="input">
+                <p class="from">Modelo</p>
+                <p class="to">G 500</p>
+              </div>
+            </div>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Abierto</p>
+                <p class="to"><input type="checkbox" checked></p>
+              </div>
+              <div class="input">
+                <p class="from">Operable</p>
+                <p class="to"><input type="checkbox" checked></p>
+              </div>
+            </div>
+          </div>
+          <div class="quote__square">
+            <p class="quote__title">3. Detalles del envío</p>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Fecha de entrega</p>
+                <p class="to">Jun. 20, 2024</p>
+              </div>
+              <div class="input">
+                <p class="from">Nombre</p>
+                <p class="to">Miguel Angel</p>
+              </div>
+            </div>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Correo</p>
+                <p class="to">midudev@gmail.com</p>
+              </div>
+              <div class="input">
+                <p class="from">Teléfono</p>
+                <p class="to">+14845211031</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="aceptar" style="display: inline;" class="btn">Aceptar</div>
+            <div id="rechazar" style="display: inline;" class="btn">Rechazar</div>
+          </div>
+        </div>
+        <div class="square quote__item">
+          <div class="icon">
+            <span><i class="fa-solid fa-money-bill"></i></span>
+            <p class="quote__title">Orden #2</p>
+          </div>
+          <div class="quote__square">
+            <p class="quote__title">1. Origen y destino</p>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Origen</p>
+                <p class="to">Miami, Florida, EE. UU.</p>
+              </div>
+              <div class="input">
+                <p class="from">Destino</p>
+                <p class="to">Carolina del Norte, EE. UU.</p>
+              </div>
+            </div>
+          </div>
+          <div class="quote__square">
+            <p class="quote__title">2. Detalles del vehículo</p>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Año</p>
+                <p class="to">2018</p>
+              </div>
+              <div class="input">
+                <p class="from">Marca</p>
+                <p class="to">Mercedes-Benz</p>
+              </div>
+              <div class="input">
+                <p class="from">Modelo</p>
+                <p class="to">G 500</p>
+              </div>
+            </div>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Abierto</p>
+                <p class="to"><input type="checkbox" checked></p>
+              </div>
+              <div class="input">
+                <p class="from">Operable</p>
+                <p class="to"><input type="checkbox" checked></p>
+              </div>
+            </div>
+          </div>
+          <div class="quote__square">
+            <p class="quote__title">3. Detalles del envío</p>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Fecha de entrega</p>
+                <p class="to">Jun. 20, 2024</p>
+              </div>
+              <div class="input">
+                <p class="from">Nombre</p>
+                <p class="to">Miguel Angel</p>
+              </div>
+            </div>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Correo</p>
+                <p class="to">midudev@gmail.com</p>
+              </div>
+              <div class="input">
+                <p class="from">Teléfono</p>
+                <p class="to">93937423</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="display: inline;" class="btn">Aceptar</div>
+            <div style="display: inline;" class="btn">Rechazar</div>
+          </div>
+        </div>
+        <div class="square quote__item">
+          <div class="icon">
+            <span><i class="fa-solid fa-money-bill"></i></span>
+            <p class="quote__title">Orden #3</p>
+          </div>
+          <div class="quote__square">
+            <p class="quote__title">1. Origen y destino</p>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Origen</p>
+                <p class="to">Miami, Florida, EE. UU.</p>
+              </div>
+              <div class="input">
+                <p class="from">Destino</p>
+                <p class="to">Carolina del Norte, EE. UU.</p>
+              </div>
+            </div>
+          </div>
+          <div class="quote__square">
+            <p class="quote__title">2. Detalles del vehículo</p>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Año</p>
+                <p class="to">2018</p>
+              </div>
+              <div class="input">
+                <p class="from">Marca</p>
+                <p class="to">Mercedes-Benz</p>
+              </div>
+              <div class="input">
+                <p class="from">Modelo</p>
+                <p class="to">G 500</p>
+              </div>
+            </div>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Abierto</p>
+                <p class="to"><input type="checkbox" checked></p>
+              </div>
+              <div class="input">
+                <p class="from">Operable</p>
+                <p class="to"><input type="checkbox" checked></p>
+              </div>
+            </div>
+          </div>
+          <div class="quote__square">
+            <p class="quote__title">3. Detalles del envío</p>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Fecha de entrega</p>
+                <p class="to">Jun. 20, 2024</p>
+              </div>
+              <div class="input">
+                <p class="from">Nombre</p>
+                <p class="to">Miguel Angel</p>
+              </div>
+            </div>
+            <div class="quote__container">
+              <div class="input">
+                <p class="from">Correo</p>
+                <p class="to">midudev@gmail.com</p>
+              </div>
+              <div class="input">
+                <p class="from">Teléfono</p>
+                <p class="to">93937423</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="display: inline;" class="btn">Aceptar</div>
+            <div style="display: inline;" class="btn">Rechazar</div>
+          </div>
+        </div>
+      </div>
+      <div class="deliveries hidden square" id="deliveries">
+        <div class="head">
+          <div class="icon">
+            <span><i class="fa-solid fa-truck"></i></span>
+            <p>Lista de entregas</p>
+          </div>
+          <div class="btn">
+            <span><i class="fa-solid fa-square-plus"></i></span>
+            nueva entrega
+          </div>
+        </div>
+        <div class="main">
+          <table class="table" id="table">
+            <tr>
+              <td class="table__subtitle">Nº</td>
+              <td class="table__subtitle">Nombre</td>
+              <td class="table__subtitle">Telefono</td>
+              <td class="table__subtitle">Dirección de entrega</td>
+              <td class="table__subtitle">Fecha de entrega</td>
+              <td class="table__subtitle">Piloto asignado</td>
+              <td class="table__subtitle">Número de guía</td>
+              <td class="table__subtitle">Estado</td>
+            </tr>
+            <tr>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+              <td class="table__data"></td>
+            </tr>
+            <tr class="table-hidden" id="table-hidden">
+              <td class="table__data">1</td>
+              <td class="table__data">Miguel Angel</td>
+              <td class="table__data">+14845211031</td>
+              <td class="table__data">Carolina del Norte, EE. UU.</td>
+              <td class="table__data">Jun. 20, 2024</td>
+              <td class="table__data">Eduardo cortés</td>
+              <td class="table__data">84231</td>
+              <td class="table__data">Pendiente</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/admin.js"></script>
+</body>
+</html>

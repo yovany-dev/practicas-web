@@ -1,0 +1,131 @@
+body {
+  background-color: #ccc;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.tracking {
+  width: 350px;
+  height: min-content;
+  margin-top: 60px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+  background-color: #ffffff;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.first__text {
+  display: flex;
+  gap: 10px;
+}
+
+.p-1 {
+  color: gray;
+  font-weight: bold;
+}
+
+.p-2 {
+  color: #222;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.data-item {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.data-container-status {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.data-time {
+  width: 3px;
+  height: 50px;
+  margin-left: 5px;
+  border-radius: 99999px;
+  background-color: #0074fd;
+}
+
+.circle {
+  width: 13px;
+  height: 13px;
+  margin-top: 4px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px #0076fd57;
+  background-color: #0074fd;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  color: #222;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 14px;
+  color: gray;
+}
+
+.date-black {
+  font-size: 14px;
+  color: #222;
+  font-weight: 600;
+}
+
+
+.secound {
+  display: flex;
+  gap: 10px;
+}
+
+i {
+  font-size: 20px;
+  color: #0074fd;
+}
+
+.secound-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.subtitle {
+  font-weight: 300;
+}
+
+.pending {
+  box-shadow: none;
+  background-color: gray;
+}
+
+.data-pending {
+  display: none;
+}

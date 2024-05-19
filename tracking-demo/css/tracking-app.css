@@ -1,0 +1,43 @@
+.circle:hover {
+  cursor: pointer;
+}
+
+.piloto {
+  width: 350px;
+  height: min-content;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tracking {
+  margin-top: 0;
+}
+
+.piloto-section {
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid #0074fd;
+}
+
+.piloto-title {
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 0 10px 10px;
+  width: 80px;
+  background-color: #0074fd;
+}
+
+
+.piloto-desc {
+  display: flex;
+  align-items: center;
+  color: #222;
+}
