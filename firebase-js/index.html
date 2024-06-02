@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Firebase with JS</title>
+</head>
+<body>
+  <div id="app">
+    <button id="button-login">Login con Google</button>
+    <button id="button-logout" class="hidden">Cerrar sesion</button>
+
+    <form id="todo-form" class="hidden">
+      <div id="user-info"></div>
+      <input type="text" id="todo-input" placeholder="nuevo todo..." autocomplete="off">
+    </form>
+
+    <div id="todos-container"></div>
+  </div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
